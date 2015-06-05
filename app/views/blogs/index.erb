@@ -1,0 +1,11 @@
+<h1> Welcome to a listing of all blogs!</h1>
+
+<%=  %>
+<p>
+<% @blogs.each do |blog| %>
+<%= blog.title %>
+<% end %>
+</p>
+<% @users.each do |user| %>
+<p><a href="/users/<%= user.id %>"> <%= user.name %> </a></p>
+<% end %>

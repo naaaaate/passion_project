@@ -1,0 +1,37 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  width:1200px;
+}
+
+#header {
+  height: 50px;
+  width: 100%;
+  background-color: red;
+}
+
+#main {
+  width: 600px;
+  margin: 0 auto;
+  border-style: solid;
+}
+
+
+#footer {
+  height: 50px;
+  background-color: black;
+}
+
+#left{
+  float:left;
+}
+
+#right{
+  float: right;
+}
+
+#title{
+  border-style: solid;
+}
+#content{
+  border-style: dashed;
+}

@@ -1,0 +1,5 @@
+<h1> <%= @post.title %> </h1>
+<h1> <%= @post.content %> </h1>
+<a href= "/users/<%= session[:user_id] %>">Home</a>
+<br>
+<a href= "/posts/<%=@post.id%>/edit">Edit</a>

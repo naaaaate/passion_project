@@ -1,0 +1,30 @@
+<div id="main">
+  <h1> Welcome to <%= @blog.title %></h1>
+
+
+
+
+  <% @posts.each do |post| %>
+  <p id="title"><%= post.title %> </p>
+  <p id="content"><%= post.content %> </p> <br>
+
+  <!-- this should show only in blog user's sign in so he can edit the posts.. -->
+
+ <!--  <a href="/posts/<%= post.id %>">Show Post</a>
+  <a href="/posts/<%= post.id %>/edit">Edit</a>
+  <form action="/posts/<%= post.id %>" method="post">
+    <input type="hidden" name= "_method" value="delete">
+    <input type="submit" value= "Delete" >
+  </form> -->
+  <!-- <a href= "/posts/<%= post.id %>">Show</a>
+  <a href= "/posts/<%= post.id %>/edit">Edit</a>
+   -->
+
+  <!-- <form action="/posts/<%= post.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete">
+  </form> -->
+  <% end %>
+</div>
+
+<div id="footer"></div>
